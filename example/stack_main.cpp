@@ -48,7 +48,8 @@ void test_list() {
     linkedList.Erase(3);
     linkedList.Print();
 
-   LinkedList<int>::Iterator iter =
+   LinkedList<int>::Iterator iter = llist.begin();
+    cout << *(iter) << endl;
 
 }
 

@@ -151,7 +151,7 @@ public:
     public:
         Iterator():_iter(nullptr) {}
 
-        Iterator(const Node* node):_iter(node){}
+        Iterator(const Node<T>* node):_iter(const_cast<Node<T>*>(node)){}
 
         ~Iterator() { delete _iter; }
 
